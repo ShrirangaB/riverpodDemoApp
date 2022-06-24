@@ -23,11 +23,13 @@ class MyApp extends StatelessWidget {
     final GoRouter _router = GoRouter(
       routes: <GoRoute>[
         GoRoute(
+          name: 'homeScreen',
           path: '/',
           builder: (BuildContext context, GoRouterState state) =>
               const HomeScreen(),
         ),
         GoRoute(
+          name: 'settingsScreen',
           path: '/settings',
           builder: (BuildContext context, GoRouterState state) =>
               const SettingsScreen(),
