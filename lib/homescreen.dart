@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             onPressed: () {
-              context.push('/settings');
+              context.pushNamed('settingsScreen');
             },
             icon: const Icon(Icons.settings),
           )
